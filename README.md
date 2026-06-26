@@ -69,7 +69,7 @@ bash install-qoder.sh
   
 - **"根据这个标注截图修改图片"** — 标注驱动的图片编辑
 
-![根据 Cowart 标注截图生成修订图](assets/Qoder-Cowart-edit.png)
+![根据 Cowart 标注截图生成修订图](assets/Qoder-Cowart-Edit.png)
 
 
 ## 自定义安装路径
