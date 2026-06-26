@@ -172,7 +172,7 @@ Cowart service should be running at \`http://127.0.0.1:43217\`. If not, use \`co
 
 6. Insert via MCP \`insert_cowart_image\` tool:
    \`\`\`json
-   { \"imagePath\": \"/path/to/image.png\", \"projectDir\": \"/project\", \"cowartUrl\": \"http://127.0.0.1:43217\", \"anchorShapeId\": \"<holder-id>\", \"placement\": \"right\", \"margin\": 40, \"matchAnchor\": true }
+   { \"imagePath\": \"/path/to/image.png\", \"projectDir\": \"/project\", \"cowartUrl\": \"http://127.0.0.1:43217\", \"anchorShapeId\": \"<holder-id>\", \"placement\": \"right\", \"margin\": 10, \"matchAnchor\": true }
    \`\`\`
 
 7. Confirm shape id, dimensions, and saved path.
@@ -207,10 +207,10 @@ Cowart service should be running at \`http://127.0.0.1:43217\`. If not, use \`co
 
 5. Insert beside original via MCP \`insert_cowart_image\`:
    \`\`\`json
-   { \"imagePath\": \"/path/to/edit.png\", \"projectDir\": \"/project\", \"cowartUrl\": \"http://127.0.0.1:43217\", \"anchorShapeId\": \"<source-id>\", \"placement\": \"right\", \"margin\": 40, \"matchAnchor\": true, \"shapeMeta\": { \"cowartGeneratedFromAnnotationEdit\": true } }
+   { \"imagePath\": \"/path/to/edit.png\", \"projectDir\": \"/project\", \"cowartUrl\": \"http://127.0.0.1:43217\", \"anchorShapeId\": \"<source-id>\", \"placement\": \"right\", \"margin\": 10, \"matchAnchor\": true, \"shapeMeta\": { \"cowartGeneratedFromAnnotationEdit\": true } }
    \`\`\`
 
-6. Place to the right of anchor (~40 units margin). Match anchor size. Do not put inside AI frame.
+6. Place to the right of anchor (~10 units margin). Match anchor size. Do not put inside AI frame.
 
 ## Guardrails
 
