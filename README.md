@@ -60,8 +60,17 @@ bash install-qoder.sh
 安装完成后，重启 Qoder（或开启新对话），然后说：
 
 - **"打开 Cowart 画布"** — 启动画布服务
+
+ ![在 Qoder 中打开 Cowart 画布](assets/Qoder-Cowart-open.png)
+
 - **"生成一张图片到画布上"** — AI 图片生成
+
+![使用 Cowart 生成并插入新图](assets/Qoder-Cowart-image.png)
+  
 - **"根据这个标注截图修改图片"** — 标注驱动的图片编辑
+
+![根据 Cowart 标注截图生成修订图](assets/Qoder-Cowart-edit.png)
+
 
 ## 自定义安装路径
 
