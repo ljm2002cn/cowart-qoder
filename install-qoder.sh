@@ -6,10 +6,9 @@
 # 用法:
 #   bash install-qoder.sh
 #
-# 或一行命令:
-#   curl -fsSL https://raw.githubusercontent.com/ljm2002cn/cowart-qoder/main/install-qoder.sh | bash
-#
-# 项目地址: https://github.com/ljm2002cn/cowart-qoder
+# 或一行命令（首次）:
+#   git clone https://github.com/zhongerxin/cowart.git ~/plugins/cowart && \
+#   bash ~/plugins/cowart/scripts/install-qoder.sh
 # =============================================================================
 set -euo pipefail
 
@@ -21,8 +20,16 @@ fail()  { echo -e "${RED}[fail]${NC}  $*"; exit 1; }
 
 COWART_DIR="${COWART_DIR:-$HOME/plugins/cowart}"
 QODER_SKILLS_DIR="$HOME/.qoder/skills"
-QODER_MCP_JSON="$HOME/Library/Application Support/Qoder/SharedClientCache/mcp.json"
 COWART_REPO="https://github.com/zhongerxin/cowart.git"
+
+# ── 检测平台，设置 mcp.json 路径 ──
+case "$(uname -s)" in
+  Darwin)  QODER_MCP_JSON="$HOME/Library/Application Support/Qoder/SharedClientCache/mcp.json" ;;
+  Linux)   QODER_MCP_JSON="${XDG_CONFIG_HOME:-$HOME/.config}/Qoder/SharedClientCache/mcp.json" ;;
+  MINGW*|MSYS*|CYGWIN*)
+    QODER_MCP_JSON="$APPDATA/Qoder/SharedClientCache/mcp.json" ;;
+  *)       QODER_MCP_JSON="$HOME/.config/Qoder/SharedClientCache/mcp.json" ;;
+esac
 
 echo ""
 echo -e "${BLUE}═══════════════════════════════════════════════════${NC}"
