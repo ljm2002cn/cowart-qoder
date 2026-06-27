@@ -6,9 +6,10 @@
 # 用法:
 #   bash install-qoder.sh
 #
-# 或一行命令（首次）:
-#   git clone https://github.com/zhongerxin/cowart.git ~/plugins/cowart && \
-#   bash ~/plugins/cowart/scripts/install-qoder.sh
+# 或一行命令:
+#   curl -fsSL https://raw.githubusercontent.com/ljm2002cn/Cowart-for-Qoder/main/install-qoder.sh | bash
+#
+# 项目地址: https://github.com/ljm2002cn/Cowart-for-Qoder
 # =============================================================================
 set -euo pipefail
 
